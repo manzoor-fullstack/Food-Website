@@ -1,0 +1,123 @@
+.threeImg1{
+    width: 100%;
+    height: 450px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/events-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.threeImg2{
+    width: 100%;
+    height: 450px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/events-2.jpg") no-repeat center center;
+    background-size: cover;
+
+}
+
+.threeImg3{
+    width: 100%;
+    height: 450px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/events-3.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.threeImg1 h5, h4{
+    padding: 0 30px;
+}
+
+.para{
+    padding: 0 30px;
+}
+
+.threeImg2 h5,h4{
+    padding: 0 30px;
+}
+.threeImg3 h5,h4{
+    padding: 0 30px;
+}
+
+.threeImg1 h5{
+    font-size: 25px;
+    font-weight: 700;
+    font-family: var(--heading-family);
+}
+
+.threeImg1 h4{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.threeImg1 p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.threeImg2 h5{
+    font-size: 25px;
+    font-weight: 700;
+    font-family: var(--heading-family);
+}
+
+.threeImg2 h4{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.threeImg2 p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.threeImg3 h5{
+    font-size: 25px;
+    font-weight: 700;
+    font-family: var(--heading-family);
+}
+
+.threeImg3 h4{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.threeImg3 p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.price{
+    border-bottom: 3px solid var(--red);
+}
+
+
+/* threeImgSlider.css */
+/* threeImgSlider.css */
+.mySwiper {
+    position: relative;
+    padding-bottom: 40px; /* Add some padding at the bottom for the pagination */
+  }
+
+  
+  /* Position the pagination below the images */
+  .swiper-pagination {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: #000; /* Customize bullet color */
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: var(--red); /* Customize active bullet color */
+  }
+  

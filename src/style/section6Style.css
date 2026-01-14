@@ -1,0 +1,67 @@
+.section_testi{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: var(--bg-color);
+}
+
+.line{
+    border-left: 4px solid var(--red);
+}
+
+.sliderr h5{
+    font-size: 25px;
+    font-weight: 700;
+    font-family: var(--heading-family);
+    color: var(--grey);
+}
+
+.sliderr p.title{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--grey);
+}
+
+.name_stars{
+    padding-left: 30px;
+}
+
+
+.blockquote {
+    quotes: "“" "”" "‘" "’";
+    padding: 10px 30px;
+    font-style: italic;
+}
+
+.blockquote::before {
+    content: open-quote;
+    font-size: 2em;
+    line-height: 0;
+    vertical-align: -0.2em;
+    margin-right: 0.1em;
+    color: var(--red);
+}
+
+.blockquote::after {
+    content: close-quote;
+    font-size: 2em;
+    line-height: 0;
+    vertical-align: -0.4em;
+    margin-left: 0.1em;
+    color: var(--red);
+}
+
+.sliderr_img img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+
+
+/* second slider */
+
+
+.cool{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}

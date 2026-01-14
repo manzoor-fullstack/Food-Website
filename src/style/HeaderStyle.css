@@ -1,0 +1,131 @@
+
+
+
+
+                      /* Header part */
+
+
+/* Header css */
+
+header .navbar{
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  header .navbar.sticky{
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: var(--white);
+    -webkit-transition: all 15ms ease-in-out;
+    transition: all 15ms ease-in-out;
+    -moz-transition: all 15ms ease-in-out;
+    box-shadow: 0 2px 3px rgba(96, 96, 96, 0.1);
+    animation: stickyTransition 0.5s both;
+  
+  }
+  
+  
+  @keyframes stickyTransition {
+    0%{
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+  }
+  
+  header .logo img{
+    width: auto;
+    max-width: inherit;
+    max-height: 45px;
+    /* font-size: 30px; */
+    /* font-weight: 600; */
+  }
+  
+  header .nav-link{
+   display: inline-flex;
+   justify-content: center;
+   color: var(--light-grey) !important;
+   padding: 0 14px !important;
+   font-size: 18px;
+   font-weight: 500;
+   font-family: var(--oswald-font);
+   -webkit-transition: all 15ms ease-in-out;
+   -o-transition: all 15ms ease-in-out;
+   -moz-transition: all 15ms ease-in-out;
+   transition: all 15ms ease-in-out;
+  }
+  
+  header .sticky .nav-link{
+    color: var(--light-black) !important;
+  }
+  
+  header .nav-link{
+    /* color: var(--red) !important; */
+    position: relative;
+  }
+
+  header .nav-link::after{
+    content: "";
+    display: block;
+    width: 0px;
+    height: 2px;
+    position: absolute;
+    bottom: -3px;
+    left: 12px;
+    background-color: var(--red);
+    transition: all 0.3s ease-in-out;
+  }
+
+  header .nav-link:hover:after{
+    width: 70%;
+  }
+  
+  header .cart{
+    position: relative;
+    top: -7px;
+  }
+  
+  header .roundpoint{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: var(--light-red);
+    border-radius: 50%;
+    color: var(--white);
+    font-size: 11px;
+    line-height: 16px;
+    text-align: center;
+    position: absolute;
+    top: 0.2px;
+    right: -12px;
+  }
+  
+    /* Media Query  */
+  
+  
+  
+  @media (max-width: 992px){
+    header .navbar{
+        background-color: var(--white);
+    }
+    header .navbar-toggler{
+        border: none;
+    }
+    header .navbar-toggler:focus{
+        outline: none;
+        box-shadow: none;
+    }
+  
+    header .nav-link{
+        color: var(--light-black) !important;
+        padding: 14px !important;
+    }
+  } 
